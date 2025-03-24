@@ -1,26 +1,59 @@
+#include <stdio.h>
+//López Gutiérrez María Fernanda
+//calculadora
 int main()
 {
-    int sum=0;
-    int a=0;
-    int b=0;
+    int sum = 0;
+    int a = 0;
+    int b = 0;
     int n;
  
-    printf ("escoje una opción;  1- suma  2-resta  3-multiplicación  4- división");
- 
- scanf ("%varaible", n);
- {
- if (n==0);
- printf ("Ingrese los números;");
- {
- scanf ("%variable", a);
- 
- scanf ("%variable",b);
- }
- {
- else
- }
- if ()
- }
+    printf ("escoje una opción; \n");
+    printf ("1- suma \n");
+    printf ("2- resta \n");
+    printf ("3- multiplicación \n");
+    printf ("4- división\n");
+    
+    scanf ("%u" , &n);
+    
+    while (n !=0)
+{
+    printf ("ingresa el primer valor;\n");
+    scanf ("%d" ,& a);
+    printf ("ingrese el segundo valor;\n");
+    scanf ("%d" ,& b);
+    
+    if (n==1)
+    {
+        sum=a+b;
+    }
+    else
+    {
+        if (n==2)
+        {
+            sum=a-b;
+        }
+    else
+        if (n==3)
+        {
+            sum=a*b;
+        }
+    else
+        if(n==4)
+        {
+            sum=a/b;
+        }
+    }
+printf ("la operación es;%d\n", sum);
 
-    return 0;
+    printf ("escoje una opción; \n");
+    printf ("1- suma \n");
+    printf ("2- resta \n");
+    printf ("3- multiplicación \n");
+    printf ("4- división\n");
+    
+    scanf ("%u" , &n);
+}
+
+return 0;
 }
